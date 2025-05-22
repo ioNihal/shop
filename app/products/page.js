@@ -1,11 +1,21 @@
+import ProductCard from "../../components/Products/ProductCard";
 import styles from "../page.module.css";
 
-export default function Products() {
+async function getProducts() {
+  const res = await fetch("https://fakestoreapi.com/products");
+  return res.json();
+}
+
+export default async function Products() {
+  const products = await getProducts();
+
   return (
     <div className={styles.page}>
-      <h1 className={styles.page}>This is the Products Page</h1>
+      <h1>Products</h1>
       <div className={styles.products}>
-              
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
       </div>
     </div>
   );

@@ -1,0 +1,75 @@
+/* page.module.css */
+
+.container {
+    padding: 2rem;
+    max-width: 960px;
+    margin: auto;
+  }
+  
+  .backLink {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  .backLink:hover {
+    text-decoration: underline;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .imageWrapper {
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image {
+    object-fit: contain;
+    border: 1px solid #eee;
+    border-radius: 8px;
+  }
+  
+  .info {
+    flex: 2 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  .category {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #888;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+    margin: 0;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .rating {
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  

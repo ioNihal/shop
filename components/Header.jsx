@@ -4,7 +4,7 @@ import styles from "../styles/Header.module.css"
 export const Header = () => {
     return (
         <header className={styles.header}>
-            <div className={styles.title}>Title</div>
+            <h1 className={styles.title}>Next.js Store</h1>
             <nav className={styles.navbar}>
                 <ul>
                     <li><Link href={"/about"}>About</Link></li>
